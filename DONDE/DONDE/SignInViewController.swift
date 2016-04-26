@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignInViewController.swift
 //  DONDE
 //
 //  Created by Rahul Shrestha on 4/18/16.
@@ -49,7 +49,7 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func onLookAroundButtonTapped(sender: AnyObject) {
-        
+        self.performSegueWithIdentifier("lookUpPageviewSegue", sender: nil)
     }
     // MARK: Utilities
     
