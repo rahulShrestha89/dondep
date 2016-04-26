@@ -36,7 +36,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onLookAroundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aox-hA-qu3"/>
-                                    <segue destination="aOF-0A-NKY" kind="presentation" identifier="lookUpPageviewSegue" id="wv3-EI-gnd"/>
+                                    <segue destination="1lD-ZT-A42" kind="presentation" identifier="lookUpPageviewSegue" modalTransitionStyle="flipHorizontal" id="CnE-1v-eV3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-IK-hff">
@@ -92,23 +92,14 @@
             <point key="canvasLocation" x="515" y="1121"/>
         </scene>
         <!--Page View Controller-->
-        <scene sceneID="J7Q-rg-V7u">
+        <scene sceneID="y6b-D6-8tU">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="aOF-0A-NKY" customClass="PageViewController" customModule="DONDE" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gzW-Jc-i5f"/>
-                        <viewControllerLayoutGuide type="bottom" id="DGq-cj-2JQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YAH-1b-KkH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="1lD-ZT-A42" customClass="PageViewController" customModule="DONDE" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3cw-D1-lLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdJ-gj-npA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="228" y="128"/>
+            <point key="canvasLocation" x="273" y="128"/>
         </scene>
         <!--Look Up Page Content View Controller-->
         <scene sceneID="Isd-gh-1Fv">

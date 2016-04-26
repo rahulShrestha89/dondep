@@ -23,6 +23,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     }
     
+    
     override func viewDidAppear (animated: Bool) {
         
         dispatch_async(dispatch_get_main_queue()) {
@@ -48,6 +49,13 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         return getViewControllerAtIndex(index)
     }
     
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
+    }
+    
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return arrPageTitle.count
+    }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
     {
