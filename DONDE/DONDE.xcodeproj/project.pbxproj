@@ -130,6 +130,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5362DB8C1CD535B100DBE7EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				539100771CC595BB008A65D1 /* SignInViewController.swift */,
+				53B37BA61CCED80D00137BB9 /* LookUpPageContentViewController.swift */,
+				53B37BA81CCEDC4C00137BB9 /* PageViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5362DB8D1CD535CC00DBE7EA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				539100C71CC5E936008A65D1 /* ColorConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		5362DB8E1CD535E000DBE7EA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5362DB8F1CD535E600DBE7EA /* Fonts */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		5362DB8F1CD535E600DBE7EA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				539100A61CC59BEA008A65D1 /* Happy-Camper-Regular.ttf */,
+				53B37B9C1CCECB7800137BB9 /* KGLifeisMessy.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		539100691CC595BB008A65D1 = {
 			isa = PBXGroup;
 			children = (
@@ -158,19 +193,16 @@
 		539100741CC595BB008A65D1 /* DONDE */ = {
 			isa = PBXGroup;
 			children = (
+				5362DB8E1CD535E000DBE7EA /* Helpers */,
+				5362DB8D1CD535CC00DBE7EA /* Constants */,
+				5362DB8C1CD535B100DBE7EA /* Controllers */,
 				53B37BAB1CCEFC6C00137BB9 /* Images */,
-				539100A61CC59BEA008A65D1 /* Happy-Camper-Regular.ttf */,
 				539100751CC595BB008A65D1 /* AppDelegate.swift */,
-				539100771CC595BB008A65D1 /* SignInViewController.swift */,
-				53B37B9C1CCECB7800137BB9 /* KGLifeisMessy.ttf */,
 				539100791CC595BB008A65D1 /* Main.storyboard */,
 				5391007F1CC595BB008A65D1 /* Assets.xcassets */,
 				539100811CC595BB008A65D1 /* LaunchScreen.storyboard */,
 				539100841CC595BB008A65D1 /* Info.plist */,
 				5391007C1CC595BB008A65D1 /* DONDE.xcdatamodeld */,
-				539100C71CC5E936008A65D1 /* ColorConstants.swift */,
-				53B37BA61CCED80D00137BB9 /* LookUpPageContentViewController.swift */,
-				53B37BA81CCEDC4C00137BB9 /* PageViewController.swift */,
 			);
 			path = DONDE;
 			sourceTree = "<group>";

@@ -12,12 +12,14 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
     
     var arrPageTitle: NSArray = NSArray()
     var arrPagePhoto: NSArray = NSArray()
+    var arrPageMainTitle: NSArray = NSArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         arrPageTitle = ["Keep Track of Previous Location", "Share Locations between Friends","Keep Snaps of Previous Locations"];
         arrPagePhoto = ["signs.png","share.png", "photo.png"];
+        arrPageMainTitle = ["Track","Share","Snap"];
         
         self.dataSource = self
 
@@ -30,6 +32,28 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
              self.setViewControllers([self.getViewControllerAtIndex(0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         }
        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let subViews: NSArray = view.subviews
+        var scrollView: UIScrollView? = nil
+        var pageControl: UIPageControl? = nil
+        
+        for view in subViews {
+            if view.isKindOfClass(UIScrollView) {
+                scrollView = view as? UIScrollView
+            }
+            else if view.isKindOfClass(UIPageControl) {
+                pageControl = view as? UIPageControl
+            }
+        }
+        
+        if (scrollView != nil && pageControl != nil) {
+            scrollView?.frame = view.bounds
+            view.bringSubviewToFront(pageControl!)
+        }
     }
     
     // MARK:- UIPageViewControllerDataSource Methods
@@ -84,6 +108,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         
         pageContentViewController.strTitle = "\(arrPageTitle[index])"
         pageContentViewController.strPhotoName = "\(arrPagePhoto[index])"
+         pageContentViewController.strMainTitle = "\(arrPageMainTitle[index])"
         pageContentViewController.pageIndex = index
         
         pageContentViewController.view.backgroundColor = UIColor.dondeBeigeColor()

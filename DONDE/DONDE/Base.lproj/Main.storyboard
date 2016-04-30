@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="515" y="1121"/>
+            <point key="canvasLocation" x="333" y="979"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="y6b-D6-8tU">
@@ -116,7 +116,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info Text Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ru7-hi-NgE">
                                 <rect key="frame" x="132" y="594" width="151" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCq-6c-gcH">
@@ -136,9 +136,17 @@
                                     <constraint firstAttribute="height" constant="285" id="LIq-Q7-rwE"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKE-XL-TFP">
+                                <rect key="frame" x="143" y="510" width="129" height="43"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DKE-XL-TFP" firstAttribute="centerX" secondItem="QqC-B2-eYY" secondAttribute="centerX" id="3mo-uK-c76"/>
+                            <constraint firstItem="Ru7-hi-NgE" firstAttribute="top" secondItem="DKE-XL-TFP" secondAttribute="bottom" constant="45" id="ACi-9S-w0P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7of-Tj-QzB" secondAttribute="trailing" constant="47" id="Djl-oy-Y2A"/>
                             <constraint firstItem="7of-Tj-QzB" firstAttribute="top" secondItem="daS-3e-wvv" secondAttribute="bottom" constant="90" id="ECu-L8-B26"/>
                             <constraint firstItem="Ru7-hi-NgE" firstAttribute="centerX" secondItem="QqC-B2-eYY" secondAttribute="centerX" id="Knl-uq-23Q"/>
@@ -152,6 +160,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="imageView" destination="7of-Tj-QzB" id="d3u-uL-kxr"/>
+                        <outlet property="mainTextView" destination="DKE-XL-TFP" id="PEO-eu-OfN"/>
                         <outlet property="textView" destination="Ru7-hi-NgE" id="oKl-57-RSt"/>
                     </connections>
                 </viewController>

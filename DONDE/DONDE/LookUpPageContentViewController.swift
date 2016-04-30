@@ -10,12 +10,14 @@ import UIKit
 
 class LookUpPageContentViewController: UIViewController {
 
+    @IBOutlet weak var mainTextView: UILabel!
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
     var pageIndex: Int = 0
     var strTitle : String!
     var strPhotoName : String!
+    var strMainTitle: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,8 @@ class LookUpPageContentViewController: UIViewController {
         self.imageView.image = UIImage(named: strPhotoName)
         self.textView.text = self.strTitle
         self.textView.alpha = 0.7
+        
+        self.mainTextView.text = self.strMainTitle
         
         self.textView.font = UIFont(name: "Avenir-Light", size: 19.0)
     }
