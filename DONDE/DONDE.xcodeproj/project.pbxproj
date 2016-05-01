@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AEE40FD0A911D2AE7607B31 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EED46100F9CF3847D4002B /* Pods.framework */; };
 		534A8D651CCF185F001E74F8 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 534A8D641CCF185F001E74F8 /* share.png */; };
 		5362DB911CD5386400DBE7EA /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5362DB901CD5386400DBE7EA /* CurrentLocationViewController.swift */; };
+		536E414B1CD6C87200F30CC2 /* Pods_DONDE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536E414A1CD6C87200F30CC2 /* Pods_DONDE.framework */; };
+		5371577F1CD6932B003E047B /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5371577D1CD6932B003E047B /* User.xcdatamodeld */; };
+		537157811CD69930003E047B /* GreetingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537157801CD69930003E047B /* GreetingsViewController.swift */; };
+		537157881CD6B417003E047B /* UITextField_Shake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537157871CD6B417003E047B /* UITextField_Shake.framework */; };
 		539100761CC595BB008A65D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539100751CC595BB008A65D1 /* AppDelegate.swift */; };
 		539100781CC595BB008A65D1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539100771CC595BB008A65D1 /* SignInViewController.swift */; };
 		5391007B1CC595BB008A65D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539100791CC595BB008A65D1 /* Main.storyboard */; };
@@ -67,6 +72,11 @@
 /* Begin PBXFileReference section */
 		534A8D641CCF185F001E74F8 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		5362DB901CD5386400DBE7EA /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
+		536E41491CD6C7F400F30CC2 /* DONDE-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DONDE-Bridging-Header.h"; sourceTree = "<group>"; };
+		536E414A1CD6C87200F30CC2 /* Pods_DONDE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_DONDE.framework; path = "Pods/../build/Debug-iphoneos/Pods_DONDE.framework"; sourceTree = "<group>"; };
+		5371577E1CD6932B003E047B /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		537157801CD69930003E047B /* GreetingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingsViewController.swift; sourceTree = "<group>"; };
+		537157871CD6B417003E047B /* UITextField_Shake.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UITextField_Shake.framework; path = "Pods/../build/Debug-iphoneos/UITextField_Shake.framework"; sourceTree = "<group>"; };
 		539100721CC595BB008A65D1 /* DONDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DONDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539100751CC595BB008A65D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539100771CC595BB008A65D1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +103,9 @@
 		53B37BA81CCEDC4C00137BB9 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		53B37BAC1CCEFC8500137BB9 /* signs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signs.png; sourceTree = "<group>"; };
 		53B37BAE1CCEFD5400137BB9 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		94EED46100F9CF3847D4002B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E00410D01C713C396A2273 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E09FDB39E5B899E8FDB41FC0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +113,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				536E414B1CD6C87200F30CC2 /* Pods_DONDE.framework in Frameworks */,
+				537157881CD6B417003E047B /* UITextField_Shake.framework in Frameworks */,
 				539100B61CC5A071008A65D1 /* DigitsKit.framework in Frameworks */,
 				539100BC1CC5A071008A65D1 /* TwitterCore.framework in Frameworks */,
 				539100B01CC59FF8008A65D1 /* Crashlytics.framework in Frameworks */,
 				539100AD1CC59FF8008A65D1 /* Fabric.framework in Frameworks */,
+				4AEE40FD0A911D2AE7607B31 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +148,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EBA76AEF4793551F208A4FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3E00410D01C713C396A2273 /* Pods.debug.xcconfig */,
+				E09FDB39E5B899E8FDB41FC0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5362DB8C1CD535B100DBE7EA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +164,7 @@
 				539100771CC595BB008A65D1 /* SignInViewController.swift */,
 				53B37BA61CCED80D00137BB9 /* LookUpPageContentViewController.swift */,
 				53B37BA81CCEDC4C00137BB9 /* PageViewController.swift */,
+				537157801CD69930003E047B /* GreetingsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +206,8 @@
 				5391008C1CC595BC008A65D1 /* DONDETests */,
 				539100971CC595BC008A65D1 /* DONDEUITests */,
 				539100731CC595BB008A65D1 /* Products */,
+				1EBA76AEF4793551F208A4FB /* Pods */,
+				A13B9E40AE235F7A33C964C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +234,8 @@
 				539100811CC595BB008A65D1 /* LaunchScreen.storyboard */,
 				539100841CC595BB008A65D1 /* Info.plist */,
 				5391007C1CC595BB008A65D1 /* DONDE.xcdatamodeld */,
+				5371577D1CD6932B003E047B /* User.xcdatamodeld */,
+				536E41491CD6C7F400F30CC2 /* DONDE-Bridging-Header.h */,
 			);
 			path = DONDE;
 			sourceTree = "<group>";
@@ -238,6 +268,16 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		A13B9E40AE235F7A33C964C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				536E414A1CD6C87200F30CC2 /* Pods_DONDE.framework */,
+				537157871CD6B417003E047B /* UITextField_Shake.framework */,
+				94EED46100F9CF3847D4002B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,10 +285,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5391009D1CC595BC008A65D1 /* Build configuration list for PBXNativeTarget "DONDE" */;
 			buildPhases = (
+				82E38DDE42D41ABB1DA174D7 /* Check Pods Manifest.lock */,
 				5391006E1CC595BB008A65D1 /* Sources */,
 				5391006F1CC595BB008A65D1 /* Frameworks */,
 				539100701CC595BB008A65D1 /* Resources */,
 				539100AA1CC59FD5008A65D1 /* ShellScript */,
+				E60108DDAF616F3EE3E0ABAF /* Embed Pods Frameworks */,
+				B04CCDAD2BA5D9FA7F22E6FC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,6 +437,51 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 017b5a5e7a74b9044987375b646e9e9c5e2a9ce4 3fbea24bbe51738547e34361c8eebc8a571cf29fe4901a3803465986c855a09f";
 		};
+		82E38DDE42D41ABB1DA174D7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B04CCDAD2BA5D9FA7F22E6FC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60108DDAF616F3EE3E0ABAF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -401,6 +489,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5371577F1CD6932B003E047B /* User.xcdatamodeld in Sources */,
+				537157811CD69930003E047B /* GreetingsViewController.swift in Sources */,
 				539100781CC595BB008A65D1 /* SignInViewController.swift in Sources */,
 				53B37BA71CCED80D00137BB9 /* LookUpPageContentViewController.swift in Sources */,
 				539100761CC595BB008A65D1 /* AppDelegate.swift in Sources */,
@@ -551,31 +641,41 @@
 		};
 		5391009E1CC595BC008A65D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E00410D01C713C396A2273 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DONDE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.southeastern.DONDE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DONDE/DONDE-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		5391009F1CC595BC008A65D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09FDB39E5B899E8FDB41FC0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DONDE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.southeastern.DONDE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DONDE/DONDE-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -683,6 +783,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		5371577D1CD6932B003E047B /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5371577E1CD6932B003E047B /* User.xcdatamodel */,
+			);
+			currentVersion = 5371577E1CD6932B003E047B /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		5391007C1CC595BB008A65D1 /* DONDE.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
