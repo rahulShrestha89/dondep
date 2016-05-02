@@ -49,7 +49,7 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func onLookAroundButtonTapped(sender: AnyObject) {
-        self.performSegueWithIdentifier("lookUpPageviewSegue", sender: nil)
+        self.performSegueWithIdentifier("lookUpPageviewSegue", sender: self)
     }
     // MARK: Utilities
     
