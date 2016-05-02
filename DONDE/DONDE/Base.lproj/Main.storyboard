@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9EK-09-iDQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -103,40 +103,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Greetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adH-nn-Ekp">
-                                <rect key="frame" x="152" y="51" width="110" height="35"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greetings!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adH-nn-Ekp">
+                                <rect key="frame" x="137" y="57" width="140" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rdm-49-9qg">
-                                <rect key="frame" x="75" y="193" width="265" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="       " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-Vj-b0k">
+                                <rect key="frame" x="174" y="106" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="            " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGi-nv-LWt">
+                                <rect key="frame" x="237" y="106" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="        " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTQ-1B-zjy">
+                                <rect key="frame" x="238" y="106" width="72" height="29"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O24-o6-Qc6">
+                                <rect key="frame" x="110" y="168" width="195" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5AK-oe-5Oy">
-                                <rect key="frame" x="75" y="137" width="265" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@UserName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PEJ-UM-TA3">
+                                <rect key="frame" x="110" y="206" width="195" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Rdm-49-9qg" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="K7a-W5-IYK"/>
-                            <constraint firstItem="5AK-oe-5Oy" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="jHD-nW-2pW"/>
+                            <constraint firstItem="O24-o6-Qc6" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="0Pv-ik-hTr"/>
+                            <constraint firstItem="JTQ-1B-zjy" firstAttribute="leading" secondItem="RGi-nv-LWt" secondAttribute="trailing" constant="1" id="3Ol-t9-M21"/>
+                            <constraint firstItem="RGi-nv-LWt" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="LK7-k2-foy"/>
+                            <constraint firstItem="PEJ-UM-TA3" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="Men-g2-owQ"/>
+                            <constraint firstItem="PEJ-UM-TA3" firstAttribute="top" secondItem="O24-o6-Qc6" secondAttribute="bottom" constant="20" id="NOY-Dm-n12"/>
+                            <constraint firstItem="PEJ-UM-TA3" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="Sug-SW-HLk"/>
+                            <constraint firstItem="JTQ-1B-zjy" firstAttribute="top" secondItem="adH-nn-Ekp" secondAttribute="bottom" constant="20" id="TgQ-dc-WGy"/>
+                            <constraint firstItem="gmG-Vj-b0k" firstAttribute="top" secondItem="adH-nn-Ekp" secondAttribute="bottom" constant="20" id="ivl-Wc-lfy"/>
+                            <constraint firstItem="RGi-nv-LWt" firstAttribute="top" secondItem="adH-nn-Ekp" secondAttribute="bottom" constant="20" id="nMG-qe-008"/>
+                            <constraint firstItem="adH-nn-Ekp" firstAttribute="top" secondItem="TQj-mZ-DXL" secondAttribute="bottom" constant="37" id="q9f-Jx-ofd"/>
+                            <constraint firstItem="RGi-nv-LWt" firstAttribute="leading" secondItem="gmG-Vj-b0k" secondAttribute="trailing" constant="1" id="vtg-gC-Zah"/>
                             <constraint firstItem="adH-nn-Ekp" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="yeg-0y-ZAK"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="fullNameTextField" destination="5AK-oe-5Oy" id="WOb-JU-2Bo"/>
                         <outlet property="greetingsTextView" destination="adH-nn-Ekp" id="HZd-48-Gag"/>
-                        <outlet property="userNameTextField" destination="Rdm-49-9qg" id="V5a-Se-caV"/>
+                        <outlet property="shareLabel" destination="JTQ-1B-zjy" id="DyR-gE-h0T"/>
+                        <outlet property="snapLabel" destination="RGi-nv-LWt" id="JDm-TN-Aas"/>
+                        <outlet property="trackLabel" destination="gmG-Vj-b0k" id="PKp-Hc-CBc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uS7-zh-7Pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="501" y="1230"/>
+            <point key="canvasLocation" x="398" y="1262"/>
         </scene>
         <!--Location-->
         <scene sceneID="iDW-qU-ecb">
