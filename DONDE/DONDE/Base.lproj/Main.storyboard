@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9EK-09-iDQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="333" y="979"/>
+            <point key="canvasLocation" x="1456" y="611"/>
         </scene>
         <!--Greetings View Controller-->
         <scene sceneID="RoT-3L-jf2">
@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uS7-zh-7Pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="1002"/>
+            <point key="canvasLocation" x="501" y="1230"/>
         </scene>
         <!--Location-->
         <scene sceneID="iDW-qU-ecb">
@@ -156,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXh-9q-PgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="2016"/>
+            <point key="canvasLocation" x="1550" y="2408"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UHs-8Y-AXw">
@@ -176,7 +176,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30d-Sk-42m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1574" y="1161"/>
+            <point key="canvasLocation" x="1456" y="1541"/>
         </scene>
         <!--Friends-->
         <scene sceneID="znL-Zw-ElF">
@@ -196,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BgI-Wu-NaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053" y="2016"/>
+            <point key="canvasLocation" x="917" y="2048"/>
         </scene>
         <!--Settings-->
         <scene sceneID="AlC-Vn-RtV">
@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqf-wv-Rsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2013" y="2016"/>
+            <point key="canvasLocation" x="2049" y="2008"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="y6b-D6-8tU">
@@ -226,7 +226,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdJ-gj-npA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="273" y="128"/>
+            <point key="canvasLocation" x="429" y="216"/>
         </scene>
         <!--Look Up Page Content View Controller-->
         <scene sceneID="Isd-gh-1Fv">
@@ -246,17 +246,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCq-6c-gcH">
-                                <rect key="frame" x="352" y="28" width="39" height="30"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <state key="normal" title="Close">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onCloseButtonTapped:" destination="aIv-0x-O6J" eventType="touchUpInside" id="T6X-ts-qcH"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="pageViewToSignUpView" id="DpT-jk-2f9"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7of-Tj-QzB">
                                 <rect key="frame" x="68" y="110" width="279" height="285"/>
                                 <constraints>
@@ -269,16 +258,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H96-X2-MSD">
+                                <rect key="frame" x="362" y="31" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="9LT-hm-eYx"/>
+                                    <constraint firstAttribute="width" constant="39" id="Bti-rv-84L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" image="Cancel"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="aIv-0x-O6J" eventType="touchUpInside" id="RVG-lZ-mRn"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="pageViewToSignUpView" id="JuY-pe-z1c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DKE-XL-TFP" firstAttribute="centerX" secondItem="QqC-B2-eYY" secondAttribute="centerX" id="3mo-uK-c76"/>
+                            <constraint firstItem="H96-X2-MSD" firstAttribute="top" secondItem="daS-3e-wvv" secondAttribute="bottom" constant="9" id="5IB-ME-bx7"/>
                             <constraint firstItem="Ru7-hi-NgE" firstAttribute="top" secondItem="DKE-XL-TFP" secondAttribute="bottom" constant="45" id="ACi-9S-w0P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7of-Tj-QzB" secondAttribute="trailing" constant="47" id="Djl-oy-Y2A"/>
                             <constraint firstItem="7of-Tj-QzB" firstAttribute="top" secondItem="daS-3e-wvv" secondAttribute="bottom" constant="90" id="ECu-L8-B26"/>
+                            <constraint firstItem="H96-X2-MSD" firstAttribute="trailing" secondItem="QqC-B2-eYY" secondAttribute="trailingMargin" id="KFO-77-hqA"/>
                             <constraint firstItem="Ru7-hi-NgE" firstAttribute="centerX" secondItem="QqC-B2-eYY" secondAttribute="centerX" id="Knl-uq-23Q"/>
-                            <constraint firstItem="PCq-6c-gcH" firstAttribute="top" secondItem="daS-3e-wvv" secondAttribute="bottom" constant="8" id="WCq-r1-sa8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PCq-6c-gcH" secondAttribute="trailing" constant="3" id="Z1q-VB-h0J"/>
                             <constraint firstItem="7of-Tj-QzB" firstAttribute="leading" secondItem="QqC-B2-eYY" secondAttribute="leadingMargin" constant="48" id="fYp-CH-pdF"/>
                             <constraint firstItem="7of-Tj-QzB" firstAttribute="centerX" secondItem="QqC-B2-eYY" secondAttribute="centerX" id="gND-B3-mle"/>
                             <constraint firstItem="CGN-CE-Ok7" firstAttribute="top" secondItem="Ru7-hi-NgE" secondAttribute="bottom" constant="121" id="rWi-uN-wj4"/>
@@ -293,10 +295,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5x-fa-H9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788" y="128"/>
+            <point key="canvasLocation" x="1000" y="-236"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Cancel" width="32" height="32"/>
         <image name="HomeBackground" width="3000" height="2000"/>
         <image name="LocationTab" width="32" height="32"/>
         <image name="LookAroundIcon" width="32" height="32"/>

@@ -32,10 +32,8 @@ class LookUpPageContentViewController: UIViewController {
     }
 
     
-    @IBAction func onCloseButtonTapped(sender: AnyObject) {
+    @IBAction func closeButtonTapped(sender: AnyObject) {
         self.performSegueWithIdentifier("pageViewToSignUpView", sender: nil)
     }
-
  
-
 }
