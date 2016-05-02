@@ -127,16 +127,40 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O24-o6-Qc6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O24-o6-Qc6">
                                 <rect key="frame" x="110" y="168" width="195" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@UserName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PEJ-UM-TA3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PEJ-UM-TA3">
                                 <rect key="frame" x="110" y="206" width="195" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="by signing up you agree to our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARt-Si-qCU">
+                                <rect key="frame" x="133" y="244" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUq-G4-ctB">
+                                <rect key="frame" x="275" y="240" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <state key="normal" title="ToS">
+                                    <color key="titleColor" red="0.93994540999999998" green="0.17457037510000001" blue="0.1087633843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHJ-4P-2St">
+                                <rect key="frame" x="179" y="273" width="56" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="0ZM-w6-xc6"/>
+                                    <constraint firstAttribute="height" constant="52" id="D9d-TX-6JU"/>
+                                </constraints>
+                                <state key="normal" image="Proceed"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="9EK-09-iDQ" eventType="touchUpInside" id="Tso-Qg-AL1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -147,19 +171,24 @@
                             <constraint firstItem="PEJ-UM-TA3" firstAttribute="top" secondItem="O24-o6-Qc6" secondAttribute="bottom" constant="20" id="NOY-Dm-n12"/>
                             <constraint firstItem="PEJ-UM-TA3" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="Sug-SW-HLk"/>
                             <constraint firstItem="JTQ-1B-zjy" firstAttribute="top" secondItem="adH-nn-Ekp" secondAttribute="bottom" constant="20" id="TgQ-dc-WGy"/>
+                            <constraint firstItem="tUq-G4-ctB" firstAttribute="leading" secondItem="ARt-Si-qCU" secondAttribute="trailing" constant="-10" id="YcL-IM-YG1"/>
                             <constraint firstItem="gmG-Vj-b0k" firstAttribute="top" secondItem="adH-nn-Ekp" secondAttribute="bottom" constant="20" id="ivl-Wc-lfy"/>
                             <constraint firstItem="RGi-nv-LWt" firstAttribute="top" secondItem="adH-nn-Ekp" secondAttribute="bottom" constant="20" id="nMG-qe-008"/>
                             <constraint firstItem="adH-nn-Ekp" firstAttribute="top" secondItem="TQj-mZ-DXL" secondAttribute="bottom" constant="37" id="q9f-Jx-ofd"/>
+                            <constraint firstItem="OHJ-4P-2St" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="qny-1q-ffk"/>
                             <constraint firstItem="RGi-nv-LWt" firstAttribute="leading" secondItem="gmG-Vj-b0k" secondAttribute="trailing" constant="1" id="vtg-gC-Zah"/>
                             <constraint firstItem="adH-nn-Ekp" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="yeg-0y-ZAK"/>
+                            <constraint firstItem="ARt-Si-qCU" firstAttribute="centerX" secondItem="yRf-WS-yFH" secondAttribute="centerX" id="zAV-8L-hf8"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="fullNameLabel" destination="O24-o6-Qc6" id="Wor-AX-ITY"/>
                         <outlet property="greetingsTextView" destination="adH-nn-Ekp" id="HZd-48-Gag"/>
                         <outlet property="shareLabel" destination="JTQ-1B-zjy" id="DyR-gE-h0T"/>
                         <outlet property="snapLabel" destination="RGi-nv-LWt" id="JDm-TN-Aas"/>
                         <outlet property="trackLabel" destination="gmG-Vj-b0k" id="PKp-Hc-CBc"/>
+                        <outlet property="userNameLabel" destination="PEJ-UM-TA3" id="xpC-Lm-4Qm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uS7-zh-7Pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,6 +362,7 @@
         <image name="LookAroundIcon" width="32" height="32"/>
         <image name="PeopleTab" width="32" height="32"/>
         <image name="PhoneIcon" width="32" height="32"/>
+        <image name="Proceed" width="128" height="128"/>
         <image name="SettingsTab" width="32" height="32"/>
     </resources>
 </document>

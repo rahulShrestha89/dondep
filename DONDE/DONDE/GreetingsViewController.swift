@@ -13,7 +13,9 @@ class GreetingsViewController: UIViewController {
     
     @IBOutlet weak var greetingsTextView: UILabel!
     
+    @IBOutlet weak var fullNameLabel: UITextField!
 
+    @IBOutlet weak var userNameLabel: UITextField!
     
     @IBOutlet weak var trackLabel: UILabel!
     
@@ -86,6 +88,24 @@ class GreetingsViewController: UIViewController {
         })
     }
     
+    @IBAction func nextButtonPressed(sender: AnyObject) {
+        if(fullNameLabel.text=="")
+        {
+            self.fullNameLabel.shake(20,                              withDelta: 5.0,
+                speed: 0.03
+            )
+        }
+        
+        if(userNameLabel.text=="")
+        {
+            self.userNameLabel.shake(20,                              withDelta: 5.0, speed: 0.03
+            )
+        }
+        else
+        {
+            print("works!")
+        }
+    }
 
     
 }
